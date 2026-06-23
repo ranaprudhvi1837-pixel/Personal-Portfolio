@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prudhvi Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+
+            <h2 class="logo">Prudhvi</h2>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+
+        <div class="home-content">
+
+            <h1>Hello, I'm <span>Prudhvi</span></h1>
+
+            <h3>I am <span>Java Developer</span></h3>
+            <p>
+                Passionate about Web Development,
+                Java Programming and Software Engineering.
+            </p>
+
+            <a href="#contact" class="btn">
+                Hire Me
+            </a>
+
+           
+
+        </div>
+
+        <div class="home-image">
+            <img src="images/profile.jpeg" alt="Rana">
+        </div>
+
+    </section>
+
+   <!-- About Section -->
+<section id="about" class="about">
+
+    <h2 class="section-title">
+        About <span>Me</span>
+    </h2>
+
+    <div class="about-box">
+
+        <!-- Left Side Text -->
+        <div class="about-text">
+
+            <p>
+                I have completed my Bachelor of Engineering in Presidency University, Bangalore, where I focused on incorporating a blend of technical (hard) skills and interpersonal (soft) skills, and quantified my achievements whenever possible.
+
+Seeking a challenging role in a reputed organization where I can learn new technologies and use my knowledge to contribute effectively to the team, and enhance my technical and interpersonal skills
+            </p>
+
+            <p>
+                I enjoy building responsive websites, full-stack
+                applications and solving real-world problems through
+                technology. My goal is to become a professional
+                Full Stack Developer.
+            </p>
+
+            <div class="about-tags">
+
+                <span>
+                    <i class="fas fa-laptop-code"></i>
+                    Full Stack Development
+                </span>
+
+                <span>
+                    <i class="fas fa-code"></i>
+                    Java & Spring Boot
+                </span>
+
+                <span>
+                    <i class="fas fa-database"></i>
+                    Database Management
+                </span>
+
+                <span>
+                    <i class="fas fa-users"></i>
+                    Team Collaboration
+                </span>
+
+            </div>
+
+        </div>
+
+        <!-- Right Side Image -->
+        <div class="about-image">
+            <img src="images/profile1.jpg" alt="Prudhvi">
+        </div>
+
+    </div>
+
+</section>
+    <!-- Skills -->
+    <section id="skills" class="skills">
+
+        <h2 class="section-title">My Skills</h2>
+
+        <div class="skill-container">
+
+<div class="skill-card">
+    <i class="fab fa-html5"></i>
+    <h3>HTML</h3>
+</div>
+
+<div class="skill-card">
+    <i class="fab fa-css3-alt"></i>
+    <h3>CSS</h3>
+</div>
+
+<div class="skill-card">
+    <i class="fab fa-js"></i>
+    <h3>JavaScript</h3>
+</div>
+
+<div class="skill-card">
+    <i class="fab fa-java"></i>
+    <h3>Java</h3>
+</div>
+
+<div class="skill-card">
+    <i class="fas fa-database"></i>
+    <h3>MySQL</h3>
+</div>
+
+<div class="skill-card">
+    <i class="fab fa-angular"></i>
+    <h3>Angular</h3>
+</div>
+        </div>
+
+    </section>
+
+    <section id="projects" class="projects">
+
+    <h2 class="section-title">My Projects</h2>
+
+    <div class="project-container">
+
+        <!-- Question Paper Generator -->
+        <div class="project-card">
+            <img src="images/question.png" alt="Question Paper Generator">
+
+            <h3>Question Paper Generator System</h3>
+
+            <p>
+                Spring Boot + Angular application that automatically
+                generates question papers based on difficulty level,
+                subject and marks distribution.
+            </p>
+        </div>
+
+        <!-- E-Commerce Application -->
+        <div class="project-card">
+            <img src="images/shopping.avif" alt="E-Commerce Application">
+
+            <h3>E-Commerce Application</h3>
+
+            <p>
+                Full-stack E-Commerce application developed using
+                Java, Spring Boot, Angular and MySQL with shopping
+                cart and order management features.
+            </p>
+        </div>
+
+        <!-- Tic Tac Toe -->
+        <div class="project-card">
+            <img src="images/tictactoe.png" alt="Tic Tac Toe">
+
+            <h3>Tic Tac Toe Game</h3>
+
+            <p>
+                Interactive game developed using JavaScript featuring
+                responsive UI and game logic.
+            </p>
+        </div>
+
+                </div>
+
+    </div>
+
+</section>
+    <!-- Contact -->
+    <section id="contact" class="contact">
+
+       <h2 class="section-title">Contact Me</h2>
+
+<p class="contact-text">
+    I am eager to contribute my skills, experience, and dedication to help drive success.
+    Feel free to reach out to discuss potential opportunities, collaborations,
+    or projects. I would be happy to connect with you.
+</p>
+
+        <form id="contactForm">
+
+            <input type="text"
+            placeholder="Your Name"
+            required>
+
+            <input type="email"
+            placeholder="Your Email"
+            required>
+
+            <textarea rows="5"
+            placeholder="Your Message"
+            required></textarea>
+
+            <button type="submit" class="btn">
+                Send Message
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- Social Links -->
+    <div class="social-links">
+
+        <a href="https://github.com/" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href="https://linkedin.com/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+
+        <a href="https://instagram.com/" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="https://twitter.com/" target="_blank">
+            <i class="fab fa-twitter"></i>
+        </a>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Prudhvi | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

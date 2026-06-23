@@ -1,0 +1,87 @@
+http://localhost:8080/api/auth/login ===post
+
+{
+  "username": "admin",
+  "password": "admin123"
+}
+
+
+response===  {
+    "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc4MTY5MjIyOCwiZXhwIjoxNzgxNzc4NjI4fQ.z4DcQEjJAjlBMdyqX-QbNUroYP0Nup2Xg4mno7pfgTo"
+}
+
+
+Open Terminal
+
+Go to frontend:
+
+cd QpgFrontend
+
+Run:
+
+ng serve
+
+Frontend starts on:
+
+http://localhost:4200
+
+
+
+
+
+cmd
+
+mysql> CREATE DATABASE question_paper_db;
+Query OK, 1 row affected (0.07 sec)
+
+mysql> SHOW DATABASES;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| qpg_db             |
+| qpg_db1            |
+| qpg_db2            |
+| qpg_db3            |
+| qpg_db5            |
+| qpg_dbb            |
+| question_paper_db  |
+| sys                |
++--------------------+
+11 rows in set (0.08 sec)
+
+mysql> USE question_paper_db;
+Database changed
+mysql> SELECT * FROM questions;
++----+------------------+-------+---------------+---------+--------+
+| id | difficulty_level | marks | question_text | subject | topic  |
++----+------------------+-------+---------------+---------+--------+
+|  1 | Easy             |     5 | What is Java? | Java    | Basics |
++----+------------------+-------+---------------+---------+--------+
+1 row in set (0.01 sec)
+
+mysql> SHOW TABLES;
++-----------------------------+
+| Tables_in_question_paper_db |
++-----------------------------+
+| generated_papers            |
+| questions                   |
+| subjects                    |
+| users                       |
++-----------------------------+
+4 rows in set (0.03 sec)
+
+mysql> SELECT * FROM users;
+ERROR 2013 (HY000): Lost connection to MySQL server during query
+No connection. Trying to reconnect...
+Connection id:    584
+Current database: question_paper_db
+
++----+--------------------------------------------------------------+-------+----------+
+| id | password                                                     | role  | username |
++----+--------------------------------------------------------------+-------+----------+
+|  1 | $2a$10$CS4CHqVpFwoe6Ntt88ocvuRLFehrhzoAwvEqCAcClQiexU6rloahS | ADMIN | admin    |
++----+--------------------------------------------------------------+-------+----------+
+1 row in set (0.19 sec)
